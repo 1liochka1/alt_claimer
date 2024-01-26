@@ -68,7 +68,7 @@ async function main() {
     if (shuffleWallets) {
         keys.sort(() => Math.random() - 0.5);
     }
-    console.log(`${eth.blockExplorers.etherscan.url}0xf2e9da799663e0b6217a9e5ecb6a7378b8f26aba6d95c918ceb3c00f16acf81f`)
+    
     for (const key of keys) {
         await claimResult(key)
     }
